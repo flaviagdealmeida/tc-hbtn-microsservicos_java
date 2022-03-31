@@ -11,13 +11,13 @@ public class MessageResource {
 
 	  @GetMapping("/simpleMessageWelcome")
 	    public String simpleMessageWelcome() {
-	        return "BEM VINDO A AULA DE MICROSERVIÇO USANDO SPRING BOOT !!!";
+	        return "BEM VINDO A AULA DE MICROSERVIÇO USANDO SPRING BOOT";
 
 	    }
 	  
 	  @GetMapping("/login")
 	    public String login(String user, String password) {
-		  String resposta = "LOGIN EFETUADO COM SUCESSO!!!" ;
+		  String resposta = "LOGIN EFETUADO COM SUCESSO !!!" ;
 		  String usuario = "Flavia";
 	       String senha = "77889955";
 
