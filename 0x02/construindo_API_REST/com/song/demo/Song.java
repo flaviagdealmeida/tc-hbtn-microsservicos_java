@@ -1,3 +1,4 @@
+
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -7,20 +8,34 @@ public class Song implements Serializable{
 	private Integer id;
 	private String nome;
 	private String artista;
+	private String album;
 	private String anoLancamento;
-	
+		
 	
 	public Song() {
 		
 	}
 		
-	public Song(Integer id, String nome, String artista, String anoLancamento) {
+	
+	public Song(Integer id, String nome, String artista, String album, String anoLancamento) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.artista = artista;
+		this.album = album;
 		this.anoLancamento = anoLancamento;
 	}
+
+	public String getAlbum() {
+		return album;
+	}
+
+
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+
+
 	public Integer getId() {
 		return id;
 	}
@@ -66,7 +81,7 @@ public class Song implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "Musica: " + getNome() + "\n Artista: " + getArtista() + "\n Lancamento: "+getAnoLancamento();
+		return "Musica: " + getNome() + "\n Artista: " + getArtista() +"\n Album: "+ getAlbum() +"\n Lancamento: "+getAnoLancamento();
 	}
 	
 	

@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class SongRepository {
 	public Song getSongById(Integer id) {
 		for (Song song : list) {
 			if (song.getId() == id) {
-				return new Song(song.getId(), song.getNome(), song.getArtista(), song.getAnoLancamento());
+				return new Song(song.getId(), song.getNome(), song.getArtista(), song.getAlbum(), song.getAnoLancamento());
 			}
 		}
 		return null;
